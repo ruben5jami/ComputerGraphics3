@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Paint 3.0</title>
+    <link rel="stylesheet" text="css\text" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap-tour.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap-tour.css">
+    <script src="functions.js"></script>
+    <script src="data.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/2.7.0/math.min.js"></script>
+    <script src="numeric-1.2.6.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="bootstrap.icon-large.min.css" rel="stylesheet">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+<div id="menu">
+
+    <div id="logo"></div>
+
+    <div id="tools">
+
+
+        <div data-toggle="buttons" class="radios">
+
+            <label class="btn btn-sq-lg btn-primary" id="l_rotatex">
+                <input type="radio" id="rotatex" name="action" value="rotatex"/>Rotate X
+            </label>
+            <label class="btn btn-sq-lg btn-primary" id="l_rotatey">
+                <input type="radio" id="rotatey" name="action" value="rotatey"/>Rotate Y
+            </label>
+            <label class="btn btn-sq-lg btn-primary" id="l_rotatez">
+                <input type="radio" id="rotatez" name="action" value="rotatez" />Rotate Z
+            </label>
+            <label class="btn btn-sq-lg btn-primary" id="l_scale">
+                <input type="radio" id="scale" name="action" value="scale" />Scale
+            </label>
+            <label class="btn btn-sq-lg btn-primary" id="l_cavalier">
+                <input type="radio" id="cavalier" name="action" value="cavalier" />Cavalier
+            </label>
+            <label class="btn btn-sq-lg btn-primary" id="l_cabinet">
+                <input type="radio" id="cabinet" name="action" value="cabinet" />Cabinet
+            </label>
+            <label class="btn btn-sq-lg btn-primary" id="l_orthographic">
+                <input type="radio" id="orthographic" name="action" value="orthographic" />Orthographic
+            </label>
+            <label class="btn btn-sq-lg btn-primary" id="l_perspective">
+                <input type="radio" id="perspective" name="action" value="perspective" />Perspective
+            </label>
+            <label class="btn btn-sq-lg btn-primary" id="l_translate">
+                <input type="radio" id="translate" name="action" value="translate" />Translate
+            </label>
+            <div id="load_file">  <button class="btn btn-warning" id="load_file2" type="button" onclick="reload()">Re-Load</button></div>
+
+        </div>
+    </div>
+</div>
+
+<canvas id="canvas" width="600" height="600"></canvas>
+</body>
+</html>
